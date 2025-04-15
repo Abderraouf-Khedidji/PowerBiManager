@@ -10,8 +10,8 @@ Powerbi-front/node_modules/**
 
 
 # Ignorar virtual environment de Python
-python/venv/
-python/__pycache__/
+Powerbi-server/venv/**
+Powerbi-server/__pycache__/**
 
 # Archivo específico
 workFlows/webpack.statistics.dev.html
