@@ -1,5 +1,5 @@
 # Ignorar node_modules en cualquier subcarpeta
-**/node_modules/**
+**components/**/node_modules/**
 
 # Ignorar dist en cualquier subcarpeta
 **/dist/**
@@ -7,8 +7,6 @@
 # Ignorar .vscode en cualquier subcarpeta
 **/.vscode/**
 
-# Ignorar .vscode en cualquier subcarpeta
-**/.env/**
 
 # Ignorar virtual environment de Python
 python/venv/
