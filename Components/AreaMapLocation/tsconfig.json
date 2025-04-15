@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "types": ["react", "react-dom"],
+        "allowJs": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es6",
+        "sourceMap": true,
+        "outDir": "./.tmp/build/",
+        "moduleResolution": "node",
+        "declaration": true,
+        "lib": ["es2015", "dom"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "files": ["src/VisualController.ts"]
+}

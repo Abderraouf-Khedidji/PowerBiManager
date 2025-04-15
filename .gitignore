@@ -1,0 +1,24 @@
+# Ignorar node_modules en cualquier subcarpeta
+**/node_modules/**
+
+# Ignorar dist en cualquier subcarpeta
+**/dist/**
+
+# Ignorar .vscode en cualquier subcarpeta
+**/.vscode/**
+
+# Ignorar .vscode en cualquier subcarpeta
+**/.env/**
+
+# Ignorar virtual environment de Python
+python/venv/
+python/__pycache__/
+
+# Archivo específico
+workFlows/webpack.statistics.dev.html
+
+# Ignorar temp en cualquier subcarpeta
+**/.tmp/**
+
+# Ignorar archivos de Git
+.git/

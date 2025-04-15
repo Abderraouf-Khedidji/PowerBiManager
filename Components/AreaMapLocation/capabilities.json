@@ -1,0 +1,143 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Eje X (area_point)",
+            "name": "x",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Eje Y (area_point)",
+            "name": "y",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Id (area)",
+            "name": "areaId",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Id del mapa (distribution)",
+            "name": "plano",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Origen en X (map)",
+            "name": "xOrigin",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Origen en Y (map)",
+            "name": "yOrigin",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Escala (map)",
+            "name": "scale",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Tipo de area (area)",
+            "name": "type",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Orden (area_point)",
+            "name": "sort_order",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Color (area)",
+            "name": "color",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "circle": {
+            "properties": {
+                "circleColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "x"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "y"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "areaId"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "plano"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "xOrigin"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "yOrigin"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "scale"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "type"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "sort_order"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "color"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true,
+            "parameters": [
+                "*"
+            ]
+        }
+    ]
+}
