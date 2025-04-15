@@ -1,0 +1,128 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Nombre del proceso",
+            "name": "processname",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Identificador del proceso",
+            "name": "idprocess",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Nombre de WorkFlow",
+            "name": "workflowname",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Identificador del WorkFlow",
+            "name": "idworkflow",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Tiempo minimo",
+            "name": "tmin",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Tiempo maximo",
+            "name": "tmax",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Tiempo medio",
+            "name": "tavg",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Nombre de paso",
+            "name": "step",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Identificador del area",
+            "name": "areaId",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "circle": {
+            "properties": {
+                "circleColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "processname"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "idprocess"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "workflowname"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "idworkflow"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "tmin"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "tmax"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "step"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "areaId"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true,
+            "parameters": [
+                "*"
+            ]
+        }
+    ]
+}

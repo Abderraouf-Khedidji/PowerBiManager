@@ -1,0 +1,101 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.table-container {
+    flex: 0 1 auto;
+    max-height: 200px;
+    /* Ajusta este valor según el tamaño de tus filas */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Oculta el scroll horizontal */
+}
+
+.table-container::-webkit-scrollbar {
+    width: 0;
+    /* Oculta los scrolls en navegadores basados en WebKit */
+    height: 0;
+}
+
+table {
+    width: 100%;
+    font-size: 0.875rem;
+    text-align: left;
+    color: #6b7280;
+    /* text-gray-500 */
+}
+
+thead {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    background-color: #f9fafb;
+    /* bg-gray-50 */
+    color: #374151;
+    /* text-gray-700 */
+}
+
+thead.dark {
+    background-color: #374151;
+    /* dark:bg-gray-700 */
+    color: #9ca3af;
+    /* dark:text-gray-400 */
+}
+
+th {
+    padding: 0.50rem 1rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    /* border-gray-200 */
+}
+
+tbody tr.dark {
+    border-bottom: 1px solid #374151;
+    /* dark:border-gray-700 */
+}
+
+td {
+    padding: 0.50rem 1rem;
+}
+
+.workflow-table {
+    margin-bottom: 20px;
+}
+
+.graph-container {
+    flex: 1 1 auto;
+    overflow: hidden;
+    position: relative;
+    /* Ensure the graph container is positioned correctly */
+}
+
+.react-flow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* Ensure the React Flow component fills the container */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pulse-animation {
+    animation: pulse 1.5s infinite;
+}

@@ -1,0 +1,111 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Eje X",
+            "name": "x",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Eje Y",
+            "name": "y",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Valor",
+            "name": "value",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Planos",
+            "name": "plano",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Origen en X",
+            "name": "xOrigin",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Origen en Y",
+            "name": "yOrigin",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Escala",
+            "name": "scale",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "circle": {
+            "properties": {
+                "circleColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "select": [
+                        {
+                            "for": {
+                                "in": "x"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "y"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "value"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "plano"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "xOrigin"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "yOrigin"
+                            }
+                        },
+                        {
+                            "for": {
+                                "in": "scale"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true,
+            "parameters": ["*"]
+        }
+    ]
+}

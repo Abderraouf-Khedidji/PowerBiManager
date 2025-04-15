@@ -1,0 +1,33 @@
+{
+    "visual": {
+        "name": "HeatMap",
+        "displayName": "HeatMap",
+        "guid": "HeatMap",
+        "visualClassName": "Visual",
+        "version": "1.0.0.0",
+        "description": "Mi primer componente de power bi con react",
+        "supportUrl": "https://github.com/Abderraouf-Khedidji",
+        "gitHubUrl": "https://github.com/Abderraouf-Khedidji"
+    },
+    "apiVersion": "5.3.0",
+    "author": {
+        "name": "Abderraouf Khedidji",
+        "email": "abderraouf.khedidji@seidor.com"
+    },
+    "assets": { "icon": "assets/favicon.ico" },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": [],
+    "version": "1.0.0.0",
+
+    "contentSecurityPolicy": "default-src *; img-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline'; connect-src *; font-src *; object-src *; media-src *; frame-src *;",
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true,
+            "parameters": ["*"]
+        }
+    ]
+}
